@@ -1,0 +1,7 @@
+{
+  "name": "flaplayprojeto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
