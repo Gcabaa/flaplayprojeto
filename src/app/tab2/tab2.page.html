@@ -1,17 +1,46 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- "Minha Biblioteca" -->
+  <h1 class="titulo">Minha Biblioteca</h1>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <!-- Últimas Ouvidas -->
+  <ion-list>
+    <ion-item-group (click)="toggleGroup('ouvidas')" class="accordion-group">
+      <ion-item>
+        Últimas Ouvidas
+        <ion-icon name="chevron-forward-outline" slot="end" *ngIf="!isGroupShown('ouvidas')"></ion-icon>
+        <ion-icon name="chevron-down-outline" slot="end" *ngIf="isGroupShown('ouvidas')"></ion-icon>
+      </ion-item>
+      <ion-item *ngIf="isGroupShown('ouvidas')">
+        <!-- Opções para Últimas Ouvidas -->
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
+  <!-- Músicas Curtidas -->
+  <ion-list>
+    <ion-item-group (click)="toggleGroup('curtidas')" class="accordion-group">
+      <ion-item>
+        Músicas Curtidas
+        <ion-icon name="chevron-forward-outline" slot="end" *ngIf="!isGroupShown('curtidas')"></ion-icon>
+        <ion-icon name="chevron-down-outline" slot="end" *ngIf="isGroupShown('curtidas')"></ion-icon>
+      </ion-item>
+      <ion-item *ngIf="isGroupShown('curtidas')">
+        <!-- Opções para Músicas Curtidas -->
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
+  <!-- Minhas Playlists -->
+  <ion-list>
+    <ion-item-group (click)="toggleGroup('playlists')" class="accordion-group">
+      <ion-item>
+        Minhas Playlists
+        <ion-icon name="chevron-forward-outline" slot="end" *ngIf="!isGroupShown('playlists')"></ion-icon>
+        <ion-icon name="chevron-down-outline" slot="end" *ngIf="isGroupShown('playlists')"></ion-icon>
+      </ion-item>
+      <ion-item *ngIf="isGroupShown('playlists')">
+        <!-- Opções para Minhas Playlists -->
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
 </ion-content>

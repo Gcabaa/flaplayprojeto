@@ -1,17 +1,63 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="tab4-content">
+  <!-- Conta -->
+  
+  <ion-button id="present-alert" class="custom-button">Contaﾠ<ion-icon aria-hidden="true" name="people-outline"></ion-icon></ion-button>
+  
+  <ion-alert
+    trigger="present-alert"
+    header="Em breve"
+    sub-header="Opção disponível na entrega final."
+    message="A vida é uma constante oscilação entre a ânsia de ter e o tédio de possuir"
+  ></ion-alert>
+  
+  <script>
+    const alert = document.querySelector('ion-alert');
+    alert.buttons = ['Action'];
+  </script>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- Histórico -->
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-button id="present-alert2" class="custom-button">armazenamentoﾠ<ion-icon aria-hidden="true" name="cloud-outline"></ion-icon> </ion-button>
+<ion-alert
+trigger="present-alert2"
+header="Em breve"
+sub-header="Opção disponível na entrega final."
+message="A vida é uma constante oscilação entre a ânsia de ter e o tédio de possuir"
+  ></ion-alert>
+  
+  <script>
+    const alert = document.querySelector('ion-alert');
+    alert.buttons = ['Action'];
+  </script>
+
+  <!-- Config. e Privac. -->
+
+  <ion-button id="present-alert3" class="custom-button">Configurações e Privacidadeﾠ<ion-icon aria-hidden="true" name="settings-outline"></ion-icon></ion-button>
+<ion-alert
+trigger="present-alert3"
+header="Em breve"
+sub-header="Opção disponível na entrega final."
+message="A vida é uma constante oscilação entre a ânsia de ter e o tédio de possuir"
+  ></ion-alert>
+  
+  <script>
+    const alert = document.querySelector('ion-alert');
+    alert.buttons = ['Action'];
+  </script>
+
+  <!-- Novidades -->
+
+  <ion-button id="present-alert4" class="custom-button">Novidadesﾠ<ion-icon aria-hidden="true" name="paper-plane-outline"></ion-icon></ion-button>
+  <ion-alert
+  trigger="present-alert4"
+  header="Em breve"
+  sub-header="Opção disponível na entrega final."
+  message="A vida é uma constante oscilação entre a ânsia de ter e o tédio de possuir"
+  ></ion-alert>
+  
+  <script>
+    const alert = document.querySelector('ion-alert');
+    alert.buttons = ['Action'];
+  </script>
+
 </ion-content>

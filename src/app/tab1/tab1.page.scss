@@ -1,0 +1,85 @@
+ion-content {
+  --background: #ffff00 url('../../assets/icon/tab1.jpg') no-repeat center center / cover !important;
+}
+
+.search-toolbar {
+    --background: transparent; 
+    --border: none; 
+  } 
+
+
+  .search-bar {
+    --background: #f5f5f5; 
+    --placeholder-color: #000000; 
+    --color: #fff; 
+    --border-radius: 10px; 
+    --border-width: 2px; 
+    --border-color: #000; 
+    --padding-start: 10px; 
+    --padding-end: 10px; 
+    width: calc(100% - 20px); 
+    margin: 80px auto; 
+    
+  }
+  
+  .search-bar .searchbar-input {
+    border-radius: 10px;
+    border-width: 0;
+    background-color: #f2f2f2; 
+  }
+  
+  .search-bar .searchbar-placeholder {
+    color: #999; 
+    font-size: 14px; 
+  }
+  
+  .content {
+    padding: 0; 
+  }
+  
+  .search-bar::part(search-icon) {
+    color: #ff0000; 
+  }
+
+  .button-toolbar {
+    --background: transparent; 
+    --border: none; 
+  }
+  
+ 
+ion-button {
+  --background: #000000; 
+  --color: #000000 !important; 
+  --border-radius: 20px;
+  --border-width: 2px; 
+  --border-color: #000;
+  --padding-start: 20px; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
+  
+  --ripple-color: transparent; 
+  --ripple-duration: 200ms; 
+}
+
+
+ion-button:first-child {
+  margin-left: 8px; 
+}
+
+
+.search-toolbar {
+  margin-bottom: -85px;
+}
+
+
+ion-button.button {
+  background-color: #ffffff !important; 
+  border-radius: 20px; 
+}
+
+
+
+
+  
+  
